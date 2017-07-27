@@ -1,0 +1,28 @@
+:host {
+  display: block;
+  height: calc(100vh - 365px);
+}
+
+.list-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  font-size: 1rem;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #efefef;
+}
+
+.user {
+  min-width: 50px;
+  max-width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  margin-left: 5px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+}
+
+.scrollable {
+  overflow: auto;
+  height: 100%;
+}

@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.menu {
+  flex: 0;
+}
+
+.page {
+  flex: 1;
+}

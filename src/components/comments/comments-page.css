@@ -1,0 +1,11 @@
+h1 {
+  margin: 0 0 25px 0;
+  font-size: 2.6rem;
+  font-weight: 300;
+}
+
+.comments-section {
+  max-height: 84%;
+  display: flex;
+  flex-direction: column;
+}

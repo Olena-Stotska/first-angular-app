@@ -1,0 +1,13 @@
+<div class="scrollable" infiniteScroll
+   debounce
+   [scrollWindow]="false"
+   [infiniteScrollDistance]="scrollDistance"
+   [infiniteScrollThrottle]="throttle"
+   (scrolled)="loadNextPage()">
+  <div class="list-item" *ngFor="let comment of comments">
+    <div class="user" [style.background-color]="comment.color">
+    </div>
+    {{ comment.text }}
+  </div>
+</div>
+

@@ -1,0 +1,8 @@
+<ng-template [ngIf]="item">
+  <h1>Comments #{{ item.title }}</h1>
+</ng-template>
+
+<div class="comments-section">
+  <comments-list [item]="item" #comments></comments-list>
+  <comments-form (add)="comments.push($event)"></comments-form>
+</div>

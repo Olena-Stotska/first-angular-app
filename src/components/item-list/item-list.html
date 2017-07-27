@@ -1,0 +1,18 @@
+<div class="scrollable"
+       infiniteScroll debounce
+       [scrollWindow]="false"
+       [infiniteScrollDistance]="scrollDistance"
+       [infiniteScrollThrottle]="throttle"
+       (scrolled)="loadNextPageItem()">
+  <div class="list-item" *ngFor="let item of items" routerLinkActive="selected">
+    <div class="main" >
+      <a class="item text-ellipsis" [routerLink]="['/items', item.id, 'comments']">
+        {{ item.title }}
+        <span class="count">{{ item.comments.length }}</span>
+      </a>
+    </div>
+    <div class="actions">
+      <button class="btn-delete" (click)="remove(item)">Delete</button>
+    </div>
+  </div>
+</div>

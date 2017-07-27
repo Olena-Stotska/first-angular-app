@@ -1,0 +1,30 @@
+:host {
+  padding-top: 20px;
+}
+
+.form-block {
+  display: flex;
+  align-items: flex-start;
+}
+
+.user-photo {
+  min-width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  margin-left: 5px;
+  background-color: #d0d0d0;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+}
+
+.form-block textarea {
+  width: 100%;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  border: 1px solid #dcdcdc;
+  padding: 5px 10px;
+  outline: none;
+}
+
+.form-block textarea:focus {
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+}

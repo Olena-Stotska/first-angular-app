@@ -1,0 +1,9 @@
+<div class="items">
+  <h1>Items</h1>
+  <item-form (add)="items.push($event)"></item-form>
+  <item-list #items></item-list>
+</div>
+
+<div class="comments" [hidden]="!outlet.isActivated">
+  <router-outlet #outlet="outlet"></router-outlet>
+</div>

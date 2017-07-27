@@ -1,0 +1,42 @@
+.form {
+  display: flex;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.form-control {
+  flex: 1;
+  border-radius: 4px;
+  font-size: 1.3rem;
+  border: 1px solid #dcdcdc;
+  padding: 5px 10px;
+  outline: none;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+}
+
+.btn-add {
+  min-width: 90px;
+  border-radius: 4px;
+  margin-left: 10px;
+  padding: 7px 20px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+  border: none;
+  background-color: #27ccc0;
+  outline: none;
+  transition: background-color 0.5s;
+  cursor: pointer;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+}
+
+.btn-add:hover {
+  background-color: #22bdb2;
+}
+
+.btn-add:active {
+  box-shadow: none;
+}
